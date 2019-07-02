@@ -15,12 +15,35 @@ Remove "Illinois" and "Kansas" from the array below.
 
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
 
+```swift
+
+var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
+
+westernStates.dropLast(2)
+print(westernStates)
+
+```
+
 
 ## Question 3
 
 Iterate through the array below. For each state, print out the name of the state, a colon, and whether it is or is not **in the continental United States.**
 
 `let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]`
+
+```swift
+let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]
+let notContinentalUS = "Hawaii"
+
+
+for state in moreStates {
+    if(state != notContinentalUS) {
+        print("\(state) is in the continental US.")
+    } else {
+        print("\(state) is NOT in the continental US.")
+    }
+}
+```
 
 
 ## Question 4
