@@ -118,6 +118,22 @@ The below array represents an unfinished batting lineup for a baseball team. **Y
 
 `var battingLineup = ["Reyes", "Jeter", "Ramirez", "Pujols","Griffey","Thomas","Jones", "Rodriguez"]`
 
+```swift
+var battingLineup = ["Reyes", "Jeter", "Ramirez", "Pujols","Griffey","Thomas","Jones", "Rodriguez"]
+
+battingLineup.append("Suzuki")
+
+battingLineup[1] = "Tejada"
+
+battingLineup[5] = "Guerrero"
+
+var helper = battingLineup[7]
+battingLineup[7] = battingLineup[0]
+battingLineup[0] = helper
+
+print(battingLineup)
+```
+
 
 ## Question 7
 
