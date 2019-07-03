@@ -289,6 +289,18 @@ Append every Int that appears in both `listOne` and `listTwo` to the `sharedElem
 var listOne = [28, 64, 7, 96, 13, 32, 94, 11, 80, 68]
 var listTwo = [18, 94, 48, 6, 42, 68, 79, 76, 13, 7]
 var sharedElements = [Int]()
+
+var sharedElements = [Int]()
+
+for n in listOne {
+    for m in listTwo {
+        if n == m {
+            sharedElements.append(n)
+
+        }
+    }
+}
+print(sharedElements)
 ```
 
 
