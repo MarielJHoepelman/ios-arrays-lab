@@ -329,6 +329,22 @@ Find the second smallest number in an Array of Ints
 
 `let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int($0)}`
 
+```swift
+let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int($0)}
+var smallest = arrayOfNumbers[0]
+var secondSmallest = arrayOfNumbers[0]
+
+for n in arrayOfNumbers {
+    if n < smallest {
+        smallest = n
+    } else if n < secondSmallest && n != smallest {
+        secondSmallest = n
+    }
+}
+print(smallest)
+print(secondSmallest)
+```
+
 
 ## Question 16
 
