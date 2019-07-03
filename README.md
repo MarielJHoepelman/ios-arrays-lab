@@ -250,6 +250,16 @@ Iterate through `thirdListOfNumbers`, and print out the sum.
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
 
+```swift
+var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]
+
+var sumOfthirdListOfNumbers = 0
+
+for n in thirdListOfNumbers {
+    sumOfthirdListOfNumbers += n
+}
+print(sumOfthirdListOfNumbers)
+```
 
 ## Question 12
 
