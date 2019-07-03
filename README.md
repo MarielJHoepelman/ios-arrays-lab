@@ -230,6 +230,19 @@ Iterate through `secondListOfNumbers`, and print out all the odd numbers.
 
 `var secondListOfNumbers = [19,13,14,19,101,10000,141,404]`
 
+```swift
+var secondListOfNumbers = [19,13,14,19,101,10000,141,404]
+
+var oddNumbers: [Int] = []
+
+for n in secondListOfNumbers {
+    if n % 2 != 0 {
+    oddNumbers.append(n)
+    }
+}
+print(oddNumbers)
+```
+
 
 ## Question 11
 
