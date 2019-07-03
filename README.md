@@ -352,6 +352,36 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000.
 
+```swift
+var range = 1...1000
+var multiplesOf3: [Int] = []
+var multiplesOf5: [Int] = []
+var sumOfMultiplesof3 = 0
+var sumOfMultiplesof5 = 0
+
+for n in range {
+    let multiplication = n * 3
+    multiplesOf3.append(multiplication)
+}
+
+for n in multiplesOf3 {
+    let sum = n + sumOfMultiplesof3
+    sumOfMultiplesof3 = sum
+}
+
+for n in range {
+    let multiplication = n * 5
+    multiplesOf5.append(multiplication)
+}
+
+for n in multiplesOf5 {
+    let sum = n + sumOfMultiplesof5
+    sumOfMultiplesof5 = sum
+}
+var sumOfMultiplesOf3and5 = sumOfMultiplesof3 + sumOfMultiplesof5
+print(sumOfMultiplesOf3and5)
+```
+
 
 ## Question 17
 
