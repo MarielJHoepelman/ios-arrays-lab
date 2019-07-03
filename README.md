@@ -96,6 +96,15 @@ Iterate through `garden` and place any 🌷 that you find into the `basket`. Rep
 ```swift
 var garden = ["dirt","🌷","dirt","🌷","dirt","dirt","🌷","dirt","🌷","dirt"]
 var basket = [String]()
+
+for (i, g) in garden.enumerated() {
+if g == "🌷" {
+    basket.append(g)
+    garden[i] = "dirt"
+    }
+}
+print(basket)
+print(garden)
 ```
 
 ## Question 6
