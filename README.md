@@ -187,6 +187,17 @@ let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int
 
 //This creates an array of 100 numbers in between 0 and 200.  For now, you don't need to worry about how it does that.
 ```
+```swift
+var largest = 0
+
+for n in arrayOfNumbers {
+    if n > largest {
+    largest = n
+
+    }
+}
+print(largest)
+```
 
 
 ## Question 9
