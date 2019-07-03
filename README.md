@@ -167,7 +167,16 @@ target = 3
 
 //false
 ```
-
+```swift
+var exists = false
+for n in numbers {
+    if n == target {
+        exists = true
+        break
+    }
+}
+print(exists)
+```
 
 ## Question 8
 
