@@ -58,9 +58,35 @@ Print out how many non-whitespace characters are in `myString`:
 
 `let myString = "This is good practice with Strings!"`
 
+```swift 
+let myString = "This is good practice with Strings!"
+var counter = 0
+for c in myString {
+    if String(c) != " " {
+        counter += 1
+    }
+}
+print(counter)
+```
+
 Iterate through the array below. For each sentence, print out how many non-whitespace characters are in it.
 
 `let myFavoriteQuotes = ["To be or not to be, that is the question.", "The only source of knowledge is experience.", "Mr. Gorbachev, tear down this wall!", "Four score and twenty years ago..."]`
+
+```swift
+let myFavoriteQuotes = ["To be or not to be, that is the question.", "The only source of knowledge is experience.", "Mr. Gorbachev, tear down this wall!", "Four score and twenty years ago..."]
+var counter = 0
+
+for quote in myFavoriteQuotes {
+    for c in quote {
+        if String(c) != " " {
+            counter += 1
+        }
+}
+print("\"\(quote)\" has \(counter) non-whitespace characters.")
+counter = 0
+}
+```
 
 
 ## Question 5
