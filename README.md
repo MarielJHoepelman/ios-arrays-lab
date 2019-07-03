@@ -311,6 +311,16 @@ Write code such that `noDupeList` has all the same Ints as `dupeFriendlyList`, b
 ```swift
 var dupeFriendlyList = [4,2,6,2,2,6,4,9,2,1]
 var noDupeList: [Int] = []
+
+for n in dupeFriendlyList {
+    if noDupeList.contains(n) {
+        continue
+    } else {
+        noDupeList.append(n)
+    }
+}
+print(noDupeList)
+
 ```
 
 ## Question 15
