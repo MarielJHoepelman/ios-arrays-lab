@@ -267,6 +267,19 @@ Iterate through `thirdListOfNumbers`, and print out the sum of all the even numb
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
 
+```swift
+var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]
+
+var sumOfEvenInthirdListOfNumbers = 0
+
+for n in thirdListOfNumbers {
+    if n % 2 == 0 {
+        sumOfEvenInthirdListOfNumbers += n
+    }
+}
+print(sumOfEvenInthirdListOfNumbers)
+```
+
 
 ## Question 13
 
