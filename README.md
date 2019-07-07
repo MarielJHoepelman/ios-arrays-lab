@@ -470,6 +470,20 @@ Input: `[[2,4,1],[3,0],[9,3]]`
 
 Output: `[9,3]`
 
+```swift
+var largestSum = 0
+var largest: [Int] = []
+
+for n in input {
+    let tempSum = n.0 + n.1
+        if tempSum > largestSum {
+        largest = [n.0, n.1]
+        largestSum = tempSum
+    }
+}
+print(largest)
+```
+
 
 ## Question 21
 
