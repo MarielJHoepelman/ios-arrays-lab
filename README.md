@@ -440,6 +440,27 @@ input: `["apes", "abba", "apple"]`
 
 output: `"abba"`
 
+```swift
+var aCounter = 0
+var largestCounter = 0
+var largestWord = ""
+
+for word in input {
+    for c in word {
+        if String(c) == "a" {
+            aCounter += 1
+        }
+    }
+
+    if aCounter > largestCounter {
+        largestWord = word
+        largestCounter = aCounter
+    }
+    aCounter = 0
+}
+print(largestWord)
+```
+
 
 ## Question 20
 
