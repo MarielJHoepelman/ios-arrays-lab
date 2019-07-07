@@ -599,6 +599,25 @@ Print out the sum of the diagonals of `myMatrix`.
 
 `var myMatrix = [[10, 14, 12], [91, 1, 9], [31, 3, 21]]`
 
+```swift
+var principalDiagonal = 0
+var secondaryDiagonal = 0
+var matrixSize = myMatrix.count
+
+for (i, n) in myMatrix.enumerated() { // i = outer index and n array of values in index
+    for (j, m) in n.enumerated() { // j inner index and m is value of index
+        if i == j{ // 0, 0 1, 1 and 2, 2 add to principal
+            principalDiagonal += m
+        }
+        if (i+j) == (matrixSize-1) { //if outer index + inner index = matrix size - 1 (i.e. 2) add index value to secondaryDiagonal.
+            secondaryDiagonal += m
+            }
+        }
+}
+print(principalDiagonal)
+print(secondaryDiagonal)
+```
+
 
 ## Question 27
 
