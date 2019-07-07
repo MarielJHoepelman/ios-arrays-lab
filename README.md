@@ -626,3 +626,20 @@ Using for loops, rotate `matrixToRotate` 90 degrees.
 var matrixToRotate = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 ![Matrix Rotation](images/rotated_matrix.jpeg)
+
+```swift
+var matrixToRotate = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+var reversedMatrix = [[Int]](repeating: [Int](repeating: 0, count: 3), count: 3)
+
+// 789 456 123 what i have
+// 741 852 963 what i want
+
+for (i, n) in matrixToRotate.reversed().enumerated() {
+    for (j, m) in n.enumerated() {
+        reversedMatrix[j][i] = m
+    }
+}
+print(reversedMatrix)
+
+//Note to self: with each iteration, indexes switch, i.e in first iteration, 0, 0 becomes 0, 0 , then 0, 1 becomes 1, 0 and so on.
+```
