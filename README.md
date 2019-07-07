@@ -493,6 +493,16 @@ Input: `[(4,2), (-3,-3), (1,1), (3,9)]`
 
 Output: `[(-3,-3), (1,1)]`
 
+```swift
+var equals: [(Int, Int)] = []
+for n in input {
+    if n.0 == n.1 {
+        equals.append(n)
+    }
+}
+print(equals)
+```
+
 
 ## Question 22
 
