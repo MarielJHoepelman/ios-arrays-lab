@@ -534,6 +534,22 @@ Input: `[0..<3 , 2..<10, -4..<6, 13..<14]`
 
 Output: `[-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,13]`
 
+```swift
+var result: [Int] = []
+
+for i in input {
+    for j in i {
+        if !result.contains(j) {
+            result.append(j)
+        }
+    }
+}
+print(result.sorted())
+
+//NOTE: 10 is included in the expected output however is NOT in the range as the second range goes from two to LESS than 10 '2..<10' NOT less or equal to 10.
+//this prints: [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13]
+```
+
 
 ## Question 24
 
