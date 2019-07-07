@@ -582,6 +582,16 @@ Print out each element in `myMatrix`
 
 `var myMatrix = [[10, 14, 12], [91, 1, 9], [31, 3, 21]]`
 
+```swift
+for n in myMatrix {
+    for j in n {
+        print(j, terminator: " ")
+    }
+}
+
+// prints 10 14 12 91 1 9 31 3 21 
+```
+
 
 ## Question 26
 
