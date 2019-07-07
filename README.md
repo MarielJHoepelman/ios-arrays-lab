@@ -23,11 +23,17 @@ Remove "Illinois" and "Kansas" from the array below.
 
 ```swift
 
-var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
+var removeStates = ["Illinois", "Kansas"]
+//westernStates.dropLast(2)
+//print(westernStates)
 
-westernStates.dropLast(2)
+for state in westernStates {
+    for remove in removeStates where state == remove  {
+        let indexOfState = westernStates.firstIndex(of: state)!
+        westernStates.remove(at: indexOfState)
+    }
+}
 print(westernStates)
-
 ```
 
 
