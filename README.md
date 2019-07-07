@@ -512,6 +512,19 @@ Input: `[true, false, true, true]`
 
 Output: `false`
 
+```swift
+var allAreTrue = true
+
+var input =  [true, false, true, true]
+for i in input {
+    if !i {  //note to self: same as 'i == false'
+        allAreTrue = false
+        break
+    }
+}
+print(allAreTrue)
+```
+
 
 ## Question 23
 
