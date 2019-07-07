@@ -559,6 +559,22 @@ Input: `let arr: [Character] = ["a", "p","P","l","E"," ","S","a","u","C,"e"]`
 
 Output: `"ApLeAuE"`
 
+```swift
+var newString = ""
+var auxiliaryIndex = 0
+
+for c in arr where !c.isUppercase && c != " " {
+    if auxiliaryIndex % 2 == 0{
+        newString.append(c.uppercased())
+    }else{
+        newString.append(c.lowercased())
+    }
+    auxiliaryIndex += 1
+}
+print(newString)
+
+// NOTE: 'e' shouldn't be included in expected output because 'E' is uppercased in the original array. Output after removing spaces and uppercased characters is 'aplaue' and after uppercasing every other character is 'ApLaUe.'
+```
 
 ## Question 25
 
